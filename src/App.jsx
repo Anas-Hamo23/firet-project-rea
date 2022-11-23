@@ -1,4 +1,4 @@
-import {BrouserRouter,Routes,Route} from 'react-router-dom'
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 
 import Home from './pages/home/Home'
@@ -13,7 +13,7 @@ import Navbar from './components/Navbar'
 
  const App = () => {
    return (
-     <BrouserRouter>
+     <BrowserRouter>
         <Navbar/>
         <Home/>
         <About/>
@@ -22,7 +22,7 @@ import Navbar from './components/Navbar'
         <Palns/>
         <Trainers/>
         <Notfound/>
-     </BrouserRouter>
+     </BrowserRouter>
    )
  }
  
