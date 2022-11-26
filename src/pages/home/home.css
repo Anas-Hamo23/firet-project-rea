@@ -54,7 +54,7 @@
 }
 
 
-/* //////////////////// */
+/*  ====================progrmas=================== */
 
 .programs {
     margin-top: 4rem;
@@ -78,6 +78,9 @@
     background: var(--color-secondary);
     color: var(--color-gray-600);
 }
+
+
+/*  ====================values=================== */
 
 .values__container {
     display: grid;
@@ -115,6 +118,9 @@
     top: -1.5rem;
 }
 
+
+/*  ====================faqs=================== */
+
 .faqs__wrapper {
     margin-top: 4rem;
     display: grid;
@@ -144,4 +150,237 @@
 
 .faq p {
     margin-top: 1.5rem;
+}
+
+
+/*  ====================testmonials=================== */
+
+.testmonials {
+    width: 50rem;
+    margin-inline: auto;
+}
+
+.testmonials__head {
+    justify-content: center;
+}
+
+.card.testmonial {
+    position: relative;
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.testmonial__avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    border: 2px solid transparent;
+    overflow: hidden;
+    position: absolute;
+    top: -2rem;
+    left: calc(50% - 2rem);
+    box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+}
+
+.testmonial:hover .testmonial__avatar {
+    border-radius: 50%;
+    border-color: var(--color-gray-400);
+}
+
+.testmonial__quote {
+    font-style: italic;
+    margin: 1rem 0 2rem;
+}
+
+.card small.testmonial__title {
+    margin-top: 0.3rem;
+}
+
+.testmonials__btn-container {
+    width: fit-content;
+    margin: 2.5rem auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testmonials__btn {
+    background: transparent;
+    cursor: pointer;
+}
+
+.testmonials__btn svg {
+    font-size: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-primary);
+}
+
+
+/*  ====================footer=================== */
+
+footer {
+    background: var(--color-primary);
+    margin-top: 7rem;
+    padding: 7rem;
+    font-size: 0.9rem;
+    color: var(--color-gray-100);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
+    gap: 6rem;
+}
+
+.footer-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+.footer-container article p {
+    margin-top: 0.5rem;
+}
+
+.footer-container article h4 {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+}
+
+.footer__socials {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer__socials a {
+    background: var(--color-gray-100);
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+    transition: var(--transition);
+}
+
+.footer__socials a svg {
+    color: var(--color-gray-600);
+}
+
+.footer__socials a:hover {
+    border-color: var(--color-gray-100);
+    background: transparent;
+}
+
+.footer__copy {
+    color: var(--color-gray-100);
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 2px solid var(--color-primary-variant);
+    margin-top: 5rem;
+}
+
+
+/* =================media============ */
+
+@media(max-width:1024px) {
+    .main__header {
+        height: fit-content;
+        padding: 12rem 0;
+    }
+    .main__header-container {
+        gap: 0;
+    }
+    .main__header-circle {
+        width: 16rem;
+        height: 16rem;
+    }
+    /* programs */
+    .programs__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* values */
+    .values__container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .values__wrapper {
+        gap: 4rem 3rem;
+    }
+    .values__image {
+        display: none;
+    }
+    /* faqs */
+    .faqs__wrapper {
+        grid-template-columns: 1fr;
+    }
+    /* testmonials */
+    .testmonials {
+        width: 75%;
+    }
+    /* footer */
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+}
+
+@media(max-width:600px) {
+    .main__header {
+        margin-top: 0;
+        padding: 12rem 0 0;
+        height: 100vh;
+    }
+    .main__header-image,
+    .main__header-circle {
+        display: none;
+    }
+    .main__header-container {
+        grid-template-columns: 1fr;
+    }
+    /* programs */
+    .programs__wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+    .programs__program {
+        width: 84%;
+        margin: 0 auto;
+    }
+    /* values */
+    .values__wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .card.values__value {
+        width: 84%;
+        margin-inline: auto;
+    }
+    /* faqs */
+    .faqs__wrapper {
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    /* testmonilas */
+    .testmonials {
+        width: 100%;
+    }
+    /* footer */
+    footer {
+        margin-top: 7rem;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .footer-container article {
+        align-items: center;
+    }
+    .footer-container article p {
+        text-align: center;
+    }
 }
