@@ -1,0 +1,9 @@
+.not-container {
+    text-align: center;
+    padding-top: 8rem;
+}
+
+.not-container .btn {
+    margin-top: 2rem;
+    display: inline-block;
+}
